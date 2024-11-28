@@ -22,7 +22,7 @@ import { zodToJsonSchema } from "zod-to-json-schema";
 const ToolInputSchema = ToolSchema.shape.inputSchema;
 type ToolInput = z.infer<typeof ToolInputSchema>;
 
-/* Input schemas for tools implemented in this server */
+/* Input schemas for tools implemented in this server are very clear*/
 const EchoSchema = z.object({
   message: z.string().describe("Message to echo"),
 });
